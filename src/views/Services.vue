@@ -3,7 +3,8 @@
     <div class="py-48 relative">
       <div class="heading absolute top-0 left-0 w-full h-full" />
       <div class="z-5 absolute top-0 left-0 w-full h-full flex items-center">
-        <h1 class=" text-6xl font-bold tracking-wider px-8 sm:px-16 xl:px-16 2xl:px-32">CERAMIC COATING</h1>
+        <h1 class=" text-6xl font-bold tracking-wider px-8 sm:px-16 xl:px-16 2xl:px-32 uppercase">{{ $t('ceramic.coating')
+        }}</h1>
       </div>
     </div>
     <span class="transform-gpu -translate-y-24  flex flex-col gap-16">
@@ -22,7 +23,7 @@
           <p class="text-white text-opacity-66">{{ $t('ceramic.coating.hydrophobia') }}</p>
         </div>
         <video muted autoplay loop class="rounded-24px w-full md:w-full lg:w-156 xl:w-188 2xl:w-200"
-          src="ceramiccoating.webm" />
+          src="/ceramiccoating.webm" />
       </section>
     </span>
   </div>
