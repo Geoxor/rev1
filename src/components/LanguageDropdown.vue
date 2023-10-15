@@ -10,7 +10,6 @@
           v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang" :class="$i18n.locale == lang && 'active'">
           <enUS v-if="lang == 'en-US'" class="h-3 w-auto rounded-2px" />
           <elGR v-if="lang == 'el-GR'" class="h-3 w-auto rounded-2px" />
-          <roRO v-if="lang == 'ro-RO'" class="h-3 w-auto rounded-2px" />
           {{ $t(lang) }}
         </button>
       </menu>
@@ -26,9 +25,8 @@ import { onClickOutside } from '@vueuse/core'
 
 import elGR from "../assets/flags/el-GR.vue";
 import enUS from "../assets/flags/en-US.vue";
-import roRO from "../assets/flags/ro-RO.vue";
 
-const langs = ref(['en-US', 'el-GR', 'ro-RO']);
+const langs = ref(['en-US', 'el-GR']);
 const showLanguageDropdown = ref(false);
 const languageDropdown = ref(null)
 
