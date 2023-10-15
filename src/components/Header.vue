@@ -1,5 +1,5 @@
 <template>
-  <header class="z-10 w-full h-72px fixed flex items-center justify-between pl-6 pr-2 xl:px-8 select-none">
+  <header class="z-10 w-full h-72px fixed flex items-center justify-between pl-6 pr-2 xl:px-4 xl:pl-6 select-none">
     <div class="flex flex-1 justify-center select-none">
       <span class="mr-auto select-none">
         <router-link :to="{ name: 'home' }">
