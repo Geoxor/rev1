@@ -17,11 +17,11 @@
     <div class="hidden xl:flex flex-1 justify-center ">
       <span class="">
         <nav class="flex text-white font-semibold">
-          <router-link :to="{ name: 'home' }">Home</router-link>
-          <router-link :to="{ name: 'gallery' }">Gallery</router-link>
-          <router-link :to="{ name: 'services' }">Services</router-link>
-          <router-link :to="{ name: 'contact' }">Contact</router-link>
-          <router-link :to="{ name: 'information' }">Information</router-link>
+          <router-link :to="{ name: 'home' }">{{ $t('home') }}</router-link>
+          <router-link :to="{ name: 'gallery' }">{{ $t('gallery') }}</router-link>
+          <router-link :to="{ name: 'services' }">{{ $t('services') }}</router-link>
+          <router-link :to="{ name: 'contact' }">{{ $t('contact') }}</router-link>
+          <router-link :to="{ name: 'information' }">{{ $t('information') }}</router-link>
         </nav>
       </span>
     </div>
@@ -30,13 +30,10 @@
       <span class="ml-auto">
         <menu>
           <a class="navigations" target="_blank" href="https://maps.app.goo.gl/NurGNPLSBU8AmFtG7">
-            <PlaneIcon /> Open on Map
+            <PlaneIcon /> {{ $t('directions') }}
           </a>
           <Spacer />
-          <button class="flex">
-            <LanguageIcon />
-            <ArrowIcon />
-          </button>
+          <LanguageDropdown />
           <Spacer />
           <a class='button' target="_blank" href="https://www.facebook.com/p/Rev1-Detailing-Wrapping-100083076285508/">
             <FacebookIcon />
@@ -55,15 +52,10 @@ import Rev1_logo from '../assets/rev1_logo.vue';
 import Spacer from '../components/Spacer.vue';
 import PlaneIcon from "../assets/icons/PlaneIcon.vue";
 import InstagramIcon from "../assets/icons/InstagramIcon.vue";
-import LanguageIcon from "../assets/icons/LanguageIcon.vue";
 import FacebookIcon from "../assets/icons/FacebookIcon.vue";
-import ArrowIcon from "../assets/icons/ArrowIcon.vue";
+import LanguageDropdown from "../components/LanguageDropdown.vue";
 import BurgerIcon from '../assets/icons/BurgerIcon.vue';
 import { state } from "../state";
-// import { ref } from 'vue';
-
-// const language = ref("english");
-
 
 const openNavigation = () => {
   state.isShowingMobileNavigation.value = true;

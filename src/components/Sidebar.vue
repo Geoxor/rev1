@@ -9,25 +9,21 @@
 
       <div class="p-4">
         <nav class="flex flex-col gap-2 text-white font-semibold">
-          <router-link @click="closeNavigation" :to="{ name: 'home' }">Home</router-link>
-          <router-link @click="closeNavigation" :to="{ name: 'gallery' }">Gallery</router-link>
-          <router-link @click="closeNavigation" :to="{ name: 'services' }">Services</router-link>
-          <router-link @click="closeNavigation" :to="{ name: 'contact' }">Contact</router-link>
-          <router-link @click="closeNavigation" :to="{ name: 'information' }">Information</router-link>
+          <router-link @click="closeNavigation" :to="{ name: 'home' }">{{ $t('home') }}</router-link>
+          <router-link @click="closeNavigation" :to="{ name: 'gallery' }">{{ $t('gallery') }}</router-link>
+          <router-link @click="closeNavigation" :to="{ name: 'services' }">{{ $t('services') }}</router-link>
+          <router-link @click="closeNavigation" :to="{ name: 'contact' }">{{ $t('contact') }}</router-link>
+          <router-link @click="closeNavigation" :to="{ name: 'information' }">{{ $t('information') }}</router-link>
         </nav>
         <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
 
         <a class="navigations" target="_blank" href="https://maps.app.goo.gl/NurGNPLSBU8AmFtG7">
-          <PlaneIcon /> Open on Map
+          <PlaneIcon /> {{ $t('directions') }}
         </a>
 
         <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
 
-        <button class="flex font-semibold items-center">
-          <LanguageIcon />
-          <ArrowIcon />
-          <p class="ml-2">English</p>
-        </button>
+        <LanguageDropdown />
 
         <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
 
@@ -50,8 +46,7 @@ import InstagramIcon from "../assets/icons/InstagramIcon.vue";
 import FacebookIcon from "../assets/icons/FacebookIcon.vue";
 import { state } from "../state";
 import PlaneIcon from "../assets/icons/PlaneIcon.vue";
-import LanguageIcon from "../assets/icons/LanguageIcon.vue";
-import ArrowIcon from "../assets/icons/ArrowIcon.vue";
+import LanguageDropdown from "../components/LanguageDropdown.vue";
 
 const closeNavigation = () => {
   state.isShowingMobileNavigation.value = false;

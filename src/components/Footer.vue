@@ -7,7 +7,7 @@
         <a class="duration-100 hover:text-white" target="_blank" href="https://maps.app.goo.gl/NurGNPLSBU8AmFtG7">
           <p>
             <PlaneIcon />
-            Lidias 4, Thessaloniki 544 53
+            {{ $t('address') }}
           </p>
         </a>
 
@@ -18,58 +18,58 @@
           </p>
         </a>
 
-        <a class="duration-100 hover:text-white" target="_blank" href="tel:+302310907080">
+        <a class="duration-100 hover:text-white" target="_blank" :href="`tel:${$t('telephone')}`">
           <p>
             <TelephoneIcon />
-            +302310907080
+            {{ $t('telephone') }}
           </p>
         </a>
       </section>
     </div>
 
     <section class="footerSection">
-      <p class="text-white">Navigation</p>
-      <router-link :to="{ name: 'home' }">Home</router-link>
-      <router-link :to="{ name: 'gallery' }">Gallery</router-link>
-      <router-link :to="{ name: 'services' }">Services</router-link>
-      <router-link :to="{ name: 'contact' }">Contact</router-link>
-      <router-link :to="{ name: 'information' }">Information</router-link>
+      <p class="text-white">{{ $t('navigation') }}</p>
+      <router-link :to="{ name: 'home' }">{{ $t('home') }}</router-link>
+      <router-link :to="{ name: 'gallery' }">{{ $t('gallery') }}</router-link>
+      <router-link :to="{ name: 'services' }">{{ $t('services') }}</router-link>
+      <router-link :to="{ name: 'contact' }">{{ $t('contact') }}</router-link>
+      <router-link :to="{ name: 'information' }">{{ $t('information') }}</router-link>
     </section>
 
     <section class="footerSection hours whitespace-nowrap">
-      <p class="text-white">Opening Hours</p>
+      <p class="text-white">{{ $t('opening.hours') }}</p>
       <div>
-        <p>Monday</p>
+        <p>{{ $t('monday') }}</p>
         <p>08:30 - 17:30</p>
       </div>
       <div>
-        <p>Tuesday</p>
+        <p>{{ $t('tuesday') }}</p>
         <p>08:30 - 17:30</p>
       </div>
       <div>
-        <p>Wednesday</p>
+        <p>{{ $t('wednesday') }}</p>
         <p>08:30 - 17:30</p>
       </div>
       <div>
-        <p>Thursday</p>
+        <p>{{ $t('thursday') }}</p>
         <p>08:30 - 17:30</p>
       </div>
       <div>
-        <p>Friday</p>
+        <p>{{ $t('friday') }}</p>
         <p>08:30 - 17:30</p>
       </div>
       <div>
-        <p>Saturday</p>
+        <p>{{ $t('saturday') }}</p>
         <p>09:00 - 14:00</p>
       </div>
       <div class="opacity-50">
-        <p>Sunday</p>
-        <p>Closed</p>
+        <p>{{ $t('sunday') }}</p>
+        <p>{{ $t('closed') }}</p>
       </div>
     </section>
 
     <section class="footerSection socials">
-      <p class="text-white">Follow Us</p>
+      <p class="text-white">{{ $t('follow.us') }}</p>
       <a class='button' target="_blank" href="https://www.facebook.com/p/Rev1-Detailing-Wrapping-100083076285508/">
         <FacebookIcon />
       </a>
