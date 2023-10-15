@@ -1,6 +1,6 @@
 <template>
   <transition name="slide">
-    <div class="bg-black text-white h-full w-80 p-4 absolute right-0 z-20" v-if="state.isShowingMobileNavigation.value">
+    <div class="bg-black  text-white h-full w-80 p-4 fixed right-0 z-20" v-if="state.isShowingMobileNavigation.value">
       <div class="flex justify-end">
         <span @click="closeNavigation" class="p-2 hover:text-[#E52F4B] cursor-pointer duration-100">
           <CloseIcon />
