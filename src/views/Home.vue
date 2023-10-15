@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="h-full w-full">
-      <video src="/rev1.mp4" autoplay muted loop class="opacity-20 object-cover h-full w-full" />
+      <video src="/rev1.webm" autoplay muted loop class="opacity-20 object-cover h-full w-full" />
       <span class="absolute top-1/2 left-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2 mix-blend-exclusion ">
         <transition name="slide">
           <Rev1 v-if="showLogo" class="text-white w-168 h-auto " />
