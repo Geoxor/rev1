@@ -30,7 +30,7 @@
       <span class="ml-auto">
         <menu>
           <a class="navigations" target="_blank" href="https://maps.app.goo.gl/NurGNPLSBU8AmFtG7">
-            <PlaneIcon /> Navigations
+            <PlaneIcon /> Open on Map
           </a>
           <Spacer />
           <button class="flex">

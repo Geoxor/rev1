@@ -18,8 +18,16 @@
         <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
 
         <a class="navigations" target="_blank" href="https://maps.app.goo.gl/NurGNPLSBU8AmFtG7">
-          <PlaneIcon /> Navigations
+          <PlaneIcon /> Open on Map
         </a>
+
+        <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
+
+        <button class="flex font-semibold items-center">
+          <LanguageIcon />
+          <ArrowIcon />
+          <p class="ml-2">English</p>
+        </button>
 
         <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
 
@@ -42,6 +50,8 @@ import InstagramIcon from "../assets/icons/InstagramIcon.vue";
 import FacebookIcon from "../assets/icons/FacebookIcon.vue";
 import { state } from "../state";
 import PlaneIcon from "../assets/icons/PlaneIcon.vue";
+import LanguageIcon from "../assets/icons/LanguageIcon.vue";
+import ArrowIcon from "../assets/icons/ArrowIcon.vue";
 
 const closeNavigation = () => {
   state.isShowingMobileNavigation.value = false;
@@ -60,7 +70,7 @@ nav {
 }
 
 .navigations {
-  @apply bg-white items-center text-black py-2 px-8 rounded-full font-semibold duration-100 flex gap-2;
+  @apply bg-white items-center text-black py-2 justify-center rounded-full font-semibold duration-100 flex gap-2;
 
   &:hover {
     @apply bg-[#E52F4B] text-white;

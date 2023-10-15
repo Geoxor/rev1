@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[#1A1A1A] overflow-hidden overflow-x-auto flex items-center text-white p-8 px-2 pr-8 sm:px-8 xl:px-16 gap-16 xl:gap-32">
+    class="bg-[#1A1A1A] overflow-hidden overflow-x-auto flex items-center text-white p-8  px-2 pr-8 sm:px-8 xl:p-16 gap-16 xl:gap-32">
     <a target="_blank" href="https://www.nasiol.gr/">
       <NasiolIcon />
     </a>
