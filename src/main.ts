@@ -1,4 +1,3 @@
-import { createApp } from 'vue'
 import App from './App.vue'
 import { routes } from "./router";
 import "virtual:windi.css";

@@ -52,9 +52,9 @@ import InstagramIcon from "../assets/icons/InstagramIcon.vue";
 import LanguageIcon from "../assets/icons/LanguageIcon.vue";
 import FacebookIcon from "../assets/icons/FacebookIcon.vue";
 import ArrowIcon from "../assets/icons/ArrowIcon.vue";
-import { ref, Ref } from 'vue';
+// import { ref } from 'vue';
 
-const language = ref("english");
+// const language = ref("english");
 
 
 </script>
