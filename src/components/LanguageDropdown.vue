@@ -6,7 +6,7 @@
       <menu ref="languageDropdown" v-if="showLanguageDropdown"
         class="languageDropdown absolute w-38 flex flex-col justify-start top-8 left-0  p-1 rounded-8px border-light-700 border-1 bg-white">
         <div @click="$i18n.locale = lang;"
-          class="py-2 flex items-center gap-2 px-4 flex w-full justify-start hover:bg-light-800 hover:bg-black font-semibold text-black rounded-6px"
+          class="py-2 flex items-center gap-2 px-4 flex w-full justify-start hover:bg-light-800 hover:bg-light-900 font-semibold text-black rounded-6px"
           v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang" :class="$i18n.locale == lang && 'active'">
           <enUS v-if="lang == 'en-US'" class="h-3 w-auto rounded-2px" />
           <elGR v-if="lang == 'el-GR'" class="h-3 w-auto rounded-2px" />
