@@ -1,12 +1,12 @@
 {
-  "home": "Αρχικη",
+  "home": "Αρχική",
   "gallery": "Γκάλερι",
-  "services": "Υπηρεσεις",
-  "contact": "Επικοινωνια",
-  "information": "Πληροφοριες",
+  "services": "Υπηρεσίες",
+  "contact": "Επικοινωνία",
+  "information": "Πληροφορίες",
   "navigation": "Πλοήγηση",
-  "opening.hours": "Ωρες λειτουργίας",
-  "directions": "Κατευθύνσεις",
+  "opening.hours": "Ωράριο λειτουργίας",
+  "directions": "Οδηγίες",
   "monday": "Δευτέρα",
   "tuesday": "Τρίτη",
   "wednesday": "Τετάρτη",
@@ -16,6 +16,6 @@
   "sunday": "Κυριακή",
   "closed": "Κλειστά",
   "address": "Λυδίας 4, Θεσσαλονίκη 544 53",
-  "telephone": "2310907080",
+  "telephone": "2310 907080",
   "follow.us": "Ακολουθήστε μας"
 }
