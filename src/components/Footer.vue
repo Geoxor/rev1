@@ -32,8 +32,6 @@
       <router-link :to="{ name: 'home' }">{{ $t('home') }}</router-link>
       <router-link :to="{ name: 'gallery' }">{{ $t('gallery') }}</router-link>
       <router-link :to="{ name: 'services' }">{{ $t('services') }}</router-link>
-      <router-link :to="{ name: 'contact' }">{{ $t('contact') }}</router-link>
-      <router-link :to="{ name: 'information' }">{{ $t('information') }}</router-link>
     </section>
 
     <section class="footerSection hours whitespace-nowrap">

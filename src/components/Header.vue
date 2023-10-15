@@ -1,5 +1,6 @@
 <template>
-  <header class="z-10 w-full h-72px fixed flex items-center justify-between pl-6 pr-2 xl:px-4 xl:pl-6 select-none">
+  <header
+    class="z-10 w-full h-72px fixed flex items-center justify-between  pr-2 px-8 sm:px-16 xl:px-16 2xl:px-32 select-none">
     <div class="flex flex-1 justify-center select-none">
       <span class="mr-auto select-none">
         <router-link :to="{ name: 'home' }">
@@ -20,8 +21,6 @@
           <router-link :to="{ name: 'home' }">{{ $t('home') }}</router-link>
           <router-link :to="{ name: 'gallery' }">{{ $t('gallery') }}</router-link>
           <router-link :to="{ name: 'services' }">{{ $t('services') }}</router-link>
-          <router-link :to="{ name: 'contact' }">{{ $t('contact') }}</router-link>
-          <router-link :to="{ name: 'information' }">{{ $t('information') }}</router-link>
         </nav>
       </span>
     </div>

@@ -12,8 +12,6 @@
           <router-link @click="closeNavigation" :to="{ name: 'home' }">{{ $t('home') }}</router-link>
           <router-link @click="closeNavigation" :to="{ name: 'gallery' }">{{ $t('gallery') }}</router-link>
           <router-link @click="closeNavigation" :to="{ name: 'services' }">{{ $t('services') }}</router-link>
-          <router-link @click="closeNavigation" :to="{ name: 'contact' }">{{ $t('contact') }}</router-link>
-          <router-link @click="closeNavigation" :to="{ name: 'information' }">{{ $t('information') }}</router-link>
         </nav>
         <div class="my-4 h-1px w-full bg-white bg-opacity-20" />
 
