@@ -1,9 +1,9 @@
 <template>
   <header class="z-10 w-full h-72px fixed flex items-center justify-between pl-6 pr-2 xl:px-8 select-none">
-    <div class="flex flex-1 justify-center">
-      <span class="mr-auto">
+    <div class="flex flex-1 justify-center select-none">
+      <span class="mr-auto select-none">
         <router-link :to="{ name: 'home' }">
-          <Rev1_logo @click="" class="cursor-pointer" />
+          <Rev1_logo @click="" class="cursor-pointer select-none" />
         </router-link>
       </span>
     </div>
