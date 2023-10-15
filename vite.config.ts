@@ -8,4 +8,8 @@ export default defineConfig({
     vue(),
     WindiCSS(),
   ],
+  server: {
+    open: true,
+    host: true,
+  }
 })

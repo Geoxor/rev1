@@ -1,5 +1,5 @@
 <template>
-  <header class="z-10 w-full  fixed flex items-center justify-between px-8">
+  <header class="z-10 w-full h-72px fixed flex items-center justify-between pl-6 pr-2 xl:px-8 select-none">
     <div class="flex flex-1 justify-center">
       <span class="mr-auto">
         <router-link :to="{ name: 'home' }">
@@ -8,7 +8,13 @@
       </span>
     </div>
 
-    <div class="flex flex-1 justify-center">
+    <div class="xl:hidden flex text-white">
+      <button class="p-4" @click="openNavigation">
+        <BurgerIcon />
+      </button>
+    </div>
+
+    <div class="hidden xl:flex flex-1 justify-center ">
       <span class="">
         <nav class="flex text-white font-semibold">
           <router-link :to="{ name: 'home' }">Home</router-link>
@@ -20,7 +26,7 @@
       </span>
     </div>
 
-    <div class="flex flex-1 justify-center">
+    <div class="hidden xl:flex flex-1 justify-center">
       <span class="ml-auto">
         <menu>
           <a class="navigations" target="_blank" href="https://maps.app.goo.gl/NurGNPLSBU8AmFtG7">
@@ -52,10 +58,16 @@ import InstagramIcon from "../assets/icons/InstagramIcon.vue";
 import LanguageIcon from "../assets/icons/LanguageIcon.vue";
 import FacebookIcon from "../assets/icons/FacebookIcon.vue";
 import ArrowIcon from "../assets/icons/ArrowIcon.vue";
+import BurgerIcon from '../assets/icons/BurgerIcon.vue';
+import { state } from "../state";
 // import { ref } from 'vue';
 
 // const language = ref("english");
 
+
+const openNavigation = () => {
+  state.isShowingMobileNavigation.value = true;
+}
 
 </script>
 

@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-[#1A1A1A] h-64 p-32 flex items-center text-white gap-32">
+  <div
+    class="bg-[#1A1A1A] overflow-hidden overflow-x-auto flex items-center text-white p-8 px-2 pr-8 sm:px-8 xl:px-16 gap-16 xl:gap-32">
     <a target="_blank" href="https://www.nasiol.gr/">
       <NasiolIcon />
     </a>
@@ -22,6 +23,9 @@ import PureestAltIcon from '../assets/icons/PureestAltIcon.vue';
 a {
   @apply transform-gpu duration-100;
 
+  svg {
+    @apply h-16 xl:h-auto;
+  }
 
   &:hover {
     @apply scale-110;
