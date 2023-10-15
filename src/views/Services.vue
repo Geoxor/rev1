@@ -22,8 +22,8 @@
           <h1 class="font-bold text-[48px] md:text-[64px]">{{ $t('hydrophobia') }}</h1>
           <p class="text-white text-opacity-66">{{ $t('ceramic.coating.hydrophobia') }}</p>
         </div>
-        <video muted autoplay loop class="rounded-24px w-full md:w-full lg:w-156 xl:w-188 2xl:w-200"
-          src="/ceramiccoating.webm" />
+        <video disable-picture-in-picture="true" muted autoplay loop
+          class="rounded-24px w-full md:w-full lg:w-156 xl:w-188 2xl:w-200" src="/ceramiccoating.webm" />
       </section>
     </span>
   </div>

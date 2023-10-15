@@ -11,15 +11,15 @@
       <img src="/pictures/typer2.jpg">
       <img class="xl:col-start-2 col-span-2 row-start-3 row-span-2" src="/pictures/bmw.jpg">
       <img src="/pictures/hyundai1.jpg">
-      <video muted autoplay loop class="xl:col-start-4 xl:col-span-2 xl:row-start-2 row-span-2"
-        src="/pictures/rangerover.mp4" />
+      <video disable-picture-in-picture="true" muted autoplay loop
+        class="xl:col-start-4 xl:col-span-2 xl:row-start-2 row-span-2" src="/pictures/rangerover.mp4" />
       <img src="/pictures/ferrari3.jpg">
       <img src="/pictures/supra.jpg">
       <img src="/pictures/aprilia2.jpg">
       <img src="/pictures/hyundai2.jpg">
       <img src="/pictures/aprilia3.jpg">
-      <video muted autoplay loop class="xl:col-start-5 col-span-2 xl:row-start-4 row-end-6"
-        src="/pictures/marcedes.mp4" />
+      <video disable-picture-in-picture="true" muted autoplay loop
+        class="xl:col-start-5 col-span-2 xl:row-start-4 row-end-6" src="/pictures/marcedes.mp4" />
     </div>
   </div>
 </template>
